@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+letter_combination_phone_numbers.ilk
+letter_combination_phone_numbers.pdb
+vc140.pdb
+.vscode/tasks.json
