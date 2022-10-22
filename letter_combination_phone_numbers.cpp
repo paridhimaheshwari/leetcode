@@ -14,8 +14,8 @@ class Solution {
     public:
         vector<string> letterCombinations(string digits) {
             int x =digits.length() ;
-            if(x > 4){
-                cout <<  "greater than 4. " <<endl;
+            if(x > 4 or x == 0){
+                cout <<  "number of digits greater than 4 or no digits " <<endl;
                 return vector<string> () ;
             }
             for(int i=0 ; i<x; i++){
@@ -34,7 +34,7 @@ class Solution {
                 arr1 = letterCombinations(digits.substr(1,x-1));
                 for(int i = 0; i<curr_charmap.length(); i++){
                     for(int j = 0; j<arr1.size(); j++){
-                        string new_one = arr1.at(j) + curr_charmap[i];
+                        string new_one = curr_charmap[i] + arr1.at(j);
                         ret_arr.push_back(new_one);
                     }
                 }
