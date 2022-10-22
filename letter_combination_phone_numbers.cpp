@@ -14,7 +14,7 @@ class Solution {
     public:
         vector<string> letterCombinations(string digits) {
             int x =digits.length() ;
-            if(x > 4 or x == 0){
+            if(x > 4 || x == 0){
                 cout <<  "number of digits greater than 4 or no digits " <<endl;
                 return vector<string> () ;
             }
